@@ -232,11 +232,11 @@
       <div class="panel msg-panel">
         <h3>// send a message</h3>
         <p class="fine" style="margin-bottom:12px">Goes straight to CCC's inbox. I'll reply by email or text.</p>
-        <form id="msgForm" class="msg-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
-          <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
-          <input type="hidden" name="subject" value="New message from the CCC website">
-          <input type="hidden" name="from_name" value="CCC website">
-          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+        <form id="msgForm" class="msg-form" action="https://formsubmit.co/ajax/ccc@sparkinitiative.io" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New message from the CCC website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off">
           <div class="row2">
             <label>name<input type="text" name="name" required autocomplete="name"></label>
             <label>phone <span class="opt">(optional)</span><input type="tel" name="phone" autocomplete="tel"></label>
@@ -293,9 +293,9 @@
         if(!ms.value.trim()) return bad(ms,'please describe the problem or ask your question.');
         const btn=f.querySelector('button'); btn.disabled=true; st.className='form-status'; st.textContent='> sending...';
         try{
-          const r=await fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)});
+          const r=await fetch(f.action,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(f)))});
           const j=await r.json().catch(()=>({}));
-          if(r.ok && j.success){ st.className='form-status ok'; st.textContent='> message sent. Thanks, I\'ll get back to you soon.'; f.reset(); }
+          if(r.ok && (j.success===true || j.success==='true')){ st.className='form-status ok'; st.textContent='> message sent. Thanks, I\'ll get back to you soon.'; f.reset(); }
           else throw new Error(j.message||('HTTP '+r.status));
         }catch(err){ st.className='form-status err'; st.textContent='> send failed. Please text (979) 966-3499 or email ccc@sparkinitiative.io instead.'; }
         btn.disabled=false;

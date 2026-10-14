@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Computer Connection | PC Repair & Custom Builds, La Grange TX</title>
+  <meta name="description" content="PC repair, custom builds and upgrades in La Grange, Texas. Posted flat prices, a photo-documented report with every job, and no labor charge if it can't be fixed.">
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/img/ccc-icon-180.png">
+  <meta name="theme-color" content="#060a07">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/ccc.css">
+  <style>
+    /* boot intro, same pattern as sparkinitiative.io's homepage */
+    #intro{position:fixed;inset:0;z-index:10000;background:#040604;display:flex;flex-direction:column;
+      padding:8vh 8vw;gap:8px;font-family:"JetBrains Mono",ui-monospace,monospace;overflow:hidden;animation:introOn .5s ease both}
+    #intro.off{opacity:0;transition:opacity .6s ease;pointer-events:none}
+    @keyframes introOn{0%{transform:scale(1.5,.004);filter:brightness(6)}55%{transform:scale(1,1);filter:brightness(2)}100%{transform:none;filter:none}}
+    #intro .intro-log{display:flex;flex-direction:column;gap:3px;font-size:13px;color:#b7e6c5}
+    #intro .iln{display:flex;justify-content:space-between;gap:16px;max-width:660px;animation:ilin .12s ease}
+    @keyframes ilin{from{opacity:0;transform:translateX(-5px)}to{opacity:1;transform:none}}
+    #intro .iln .tag{font-weight:700;color:#43e08a;white-space:nowrap}
+    #intro .iln .tag.go{color:#86ffb8;text-shadow:0 0 7px rgba(67,224,138,.55)}
+    #intro .iln .tag.warn{color:#ffb347}
+    #intro .intro-final{color:#86ffb8;text-shadow:0 0 8px rgba(67,224,138,.5);font-size:clamp(1rem,2.6vw,1.6rem);font-weight:700;letter-spacing:1px;margin-top:8px}
+    #intro .intro-skip{position:absolute;bottom:16px;right:20px;color:#3e5c46;font-size:11px}
+    @media (prefers-reduced-motion: reduce){ #intro{display:none!important} }
+  </style>
+  <noscript><style>#intro{display:none!important}</style></noscript>
+</head>
+<body>
+  <div id="intro">
+    <div class="intro-log" id="introLog"></div>
+    <div class="intro-skip">▸ click anywhere to skip</div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="#top" class="logo"><img src="assets/img/ccc-mark-green.svg" alt="CCC"><span class="lockup">Custom<br>Computer<br>Connection</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#services">Prices</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#area">Service area</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="portal.html" class="nav-portal">Customer login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-lockup">
+          <img src="assets/img/ccc-mark-green.svg" alt="CCC">
+          <span class="lines" aria-label="Custom Computer Connection"><span class="ln">Custom</span><span class="ln">Computer</span><span class="ln">Connection</span></span>
+        </h1>
+        <p class="tagline" id="heroTagline">PC repair and custom builds. La Grange, Texas.</p>
+        <ul class="facts">
+          <li><b>$39</b> diagnostic, credited to the repair</li>
+          <li><b>$50/hr</b> labor</li>
+          <li><b>$179</b> custom build assembly</li>
+          <li><b>90-day</b> labor warranty</li>
+        </ul>
+        <p>One local tech, posted prices, and a written report with photos at the end of every job, so you can see exactly what was wrong and what was done.</p>
+        <div class="btn-group">
+          <a href="tel:+19799663499" class="btn btn-primary">Call (979) 966-3499</a>
+          <a href="sms:+19799663499" class="btn btn-secondary">Text a question</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="promise">
+    <div class="container">
+      <div class="section-header">
+        <h2>The deal</h2>
+        <p>What you can count on, every job.</p>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Posted prices</h3>
+          <ul class="promise">
+            <li>Flat prices for common jobs, listed below</li>
+            <li>Everything else at $50/hr, quoted first</li>
+            <li>Free phone or text consult</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Nothing without your OK</h3>
+          <ul class="promise">
+            <li>No parts bought without your written or text approval</li>
+            <li>Options and a total price when a job stalls</li>
+            <li>No fix, no labor charge</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>You see the work</h3>
+          <ul class="promise">
+            <li>Before and after photos of every problem found</li>
+            <li>Stress-test results and temperatures</li>
+            <li>A written report you keep</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Prices</h2>
+        <p>Before sales tax. Comparisons are published prices, checked October 2026.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="rates">
+          <thead><tr><th>Repair &amp; service</th><th>CCC</th><th class="vs">For comparison</th></tr></thead>
+          <tbody>
+            <tr><td>Bench diagnostic<br><span class="fine">Credited in full if you approve the repair</span></td><td class="price">$39</td><td class="vs">HomeGuide national average $40</td></tr>
+            <tr><td>Labor, in-shop or at your home<br><span class="fine">Non-menu work, quoted first. Half-hour billing after the first hour</span></td><td class="price">$50/hr</td><td class="vs">HomeGuide national average $65/hr; nearest posted local rate $60/hr on-site</td></tr>
+            <tr><td>Remote support<br><span class="fine">30-minute minimum</span></td><td class="price">$50/hr</td><td class="vs"></td></tr>
+            <tr><td>Virus / malware removal</td><td class="price">$89</td><td class="vs">Nearest posted local price $100; Geek Squad $149.99</td></tr>
+            <tr><td>Windows reinstall with updates and drivers<br><span class="fine">+$45 to move your files and settings</span></td><td class="price">$99</td><td class="vs">Nearest posted local price $120</td></tr>
+            <tr><td>New PC setup<br><span class="fine">+$45 data migration</span></td><td class="price">$129</td><td class="vs">Nearest posted local price $150; Geek Squad in-home $174.99</td></tr>
+            <tr><td>Tune-up and junk-software cleanup</td><td class="price">$39</td><td class="vs">Geek Squad remote tune-up $39.99; nearest posted local price $60</td></tr>
+            <tr><td>Clone your drive to a new SSD<br><span class="fine">Labor only</span></td><td class="price">$69</td><td class="vs">Nearest posted local price $80</td></tr>
+            <tr><td>Data backup or transfer</td><td class="price">$79</td><td class="vs">Geek Squad $99.99</td></tr>
+            <tr><td>Hardware install, per component</td><td class="price">$35</td><td class="vs">Geek Squad $39.99</td></tr>
+            <tr><td>CPU cooler reseat and fresh thermal paste<br><span class="fine">Includes a stability test. Paste at parts price</span></td><td class="price">$49</td><td class="vs"></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-wrap">
+        <table class="rates">
+          <thead><tr><th>Custom builds</th><th>CCC</th><th class="vs">For comparison</th></tr></thead>
+          <tbody>
+            <tr><td>Custom PC assembly, air or AIO liquid cooling<br><span class="fine">Windows install, BIOS and driver updates, stress test, cable management, 90-day labor warranty</span></td><td class="price">$179</td><td class="vs">Micro Center Express ProBuild $249.99</td></tr>
+            <tr><td>Build consult and parts list</td><td class="price">Free</td><td class="vs">With a CCC build; $35 on its own</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-wrap">
+        <table class="rates">
+          <thead><tr><th>Parts, rush &amp; warranty</th><th>CCC</th><th class="vs"></th></tr></thead>
+          <tbody>
+            <tr><td>Parts<br><span class="fine">Nothing ordered without your approval. You can supply your own (labor warranty only)</span></td><td class="price">Cost + 10%</td><td class="vs"></td></tr>
+            <tr><td>Rush / same day / after hours</td><td class="price">+50% labor</td><td class="vs">$25 minimum. If the wait is a part, the actual cost of the parts run instead</td></tr>
+            <tr><td>Labor warranty</td><td class="price">90 days</td><td class="vs">Parts carry the manufacturer's warranty</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine">Comparison sources: CompuCleanser (Weimar) posted price list, Geek Squad prices on bestbuy.com and Micro Center Express ProBuild listing, all checked October 14, 2026; HomeGuide computer repair cost guide. Competitor prices change. Ask for a current comparison.</p>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="container">
+      <div class="section-header">
+        <h2>How a job works</h2>
+        <p>From first message to a working PC.</p>
+      </div>
+      <ol class="steps">
+        <li><b>Call or text</b><p>Tell me what's going on. Quick questions and advice are free.</p></li>
+        <li><b>Diagnose</b><p>$39 bench diagnostic. You get a plain-English answer and a price before any repair starts.</p></li>
+        <li><b>Approve</b><p>If parts are needed, you get options with total prices. Nothing is bought until you reply.</p></li>
+        <li><b>Fix and test</b><p>Repairs, then stress tests with logged temperatures, so it's proven working, not just booting.</p></li>
+        <li><b>Report</b><p>Photos, test results and everything that was done, in a report you keep.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="reports">
+    <div class="container">
+      <div class="section-header">
+        <h2>Every job ends with a report</h2>
+        <p>Pages from a real one: a custom gaming PC that wouldn't start, with a processor running at 95°C.</p>
+      </div>
+      <div class="shots">
+        <figure><img src="assets/img/report-problem.jpg" alt="Report page: circled photos showing a liquid cooler pump that would not seat between its brackets" loading="lazy"><figcaption>The problem, photographed and circled.</figcaption></figure>
+        <figure><img src="assets/img/report-fix.jpg" alt="Report page: annotated photos of the corrected cooler mount" loading="lazy"><figcaption>How it was fixed.</figcaption></figure>
+        <figure><img src="assets/img/report-temps.jpg" alt="Report page: processor temperature 95 C before, 44 C after" loading="lazy"><figcaption>The proof: 95°C at idle before, 44°C after.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="area">
+    <div class="container">
+      <div class="section-header">
+        <h2>Service area</h2>
+        <p>Based in La Grange. Drop off, or I come to you.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="rates">
+          <thead><tr><th>Distance from La Grange (one way)</th><th>Trip fee</th></tr></thead>
+          <tbody>
+            <tr><td>0–10 miles</td><td class="price">$0</td></tr>
+            <tr><td>10–20 miles</td><td class="price">$20</td></tr>
+            <tr><td>20–35 miles</td><td class="price">$35</td></tr>
+            <tr><td>35–45 miles</td><td class="price">$50</td></tr>
+            <tr><td>45+ miles</td><td class="price">Ask</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="fine">Includes Weimar, Schulenburg, Columbus, Giddings, Smithville, Bastrop, Brenham and Flatonia, depending on where you are.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>By appointment. Call or text first.</p>
+      </div>
+      <div class="panel">
+        <div class="contact-grid">
+          <ul class="contact-lines">
+            <li><span class="k">Name</span> Ben Farris</li>
+            <li><span class="k">Phone</span> <a href="tel:+19799663499">(979) 966-3499</a> (call or text)</li>
+            <li><span class="k">Email</span> <a href="mailto:ccc@sparkinitiative.io">ccc@sparkinitiative.io</a></li>
+            <li><span class="k">Pay</span> Cash App <b>$hellbeard</b></li>
+          </ul>
+          <div class="qr"><img src="assets/img/cashapp-qr.png" alt="Cash App QR code for $hellbeard"><span>Scan to pay with Cash App</span></div>
+        </div>
+      </div>
+      <div class="panel msg-panel">
+        <h3>// send a message</h3>
+        <p class="fine" style="margin-bottom:12px">Goes straight to CCC's inbox. I'll reply by email or text.</p>
+        <form id="msgForm" class="msg-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New message from the CCC website">
+          <input type="hidden" name="from_name" value="CCC website">
+          <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+          <div class="row2">
+            <label>name<input type="text" name="name" required autocomplete="name"></label>
+            <label>phone <span class="opt">(optional)</span><input type="tel" name="phone" autocomplete="tel"></label>
+          </div>
+          <label>email <span class="opt">(required, so I can reply)</span><input type="email" name="email" required autocomplete="email"></label>
+          <label>what's this about?
+            <select name="topic">
+              <option data-hint="What's the computer doing (or not doing)? When did it start? Any error messages or beeps?">Repair / something's wrong</option>
+              <option data-hint="What will you use it for (games, work, streaming)? Rough budget? Any parts you already have or want?">Custom PC build</option>
+              <option data-hint="What are you upgrading or setting up (RAM, SSD, graphics card, new PC, Windows)? What's the computer?">Upgrade or setup</option>
+              <option data-hint="Which job is it about (date or job number, if you have it)? What's your question?">Question about a job</option>
+              <option data-hint="What can I help with? Ask anything.">Something else</option>
+            </select>
+          </label>
+          <label>problem or question<textarea name="message" rows="5" required placeholder="What's the computer doing (or not doing)? When did it start? Any error messages or beeps?"></textarea></label>
+          <button class="btn btn-primary" type="submit">send_</button>
+          <p class="form-status" id="msgStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Custom Computer Connection · La Grange, Texas · <a href="tel:+19799663499">(979) 966-3499</a></p>
+    </div>
+  </footer>
+
+  <!-- AI chat: placeholder until the local assistant on Glass is online -->
+  <button class="chat-fab" id="chatFab" aria-expanded="false" aria-controls="chatPanel"><span class="dot"></span> Ask CCC</button>
+  <div class="chat-panel" id="chatPanel" hidden>
+    <div class="chat-head"><span>ccc-assistant <em>// offline</em></span><button id="chatClose" aria-label="Close">×</button></div>
+    <div class="chat-log">
+      <p class="sys">&gt; boot ccc-assistant ... <b class="amber">NOT YET ONLINE</b></p>
+      <p>The CCC assistant is still being built. Soon it'll answer questions about prices and services here, and logged-in customers will be able to ask about their own jobs.</p>
+      <p>For now, a real person answers: <a href="sms:+19799663499">text (979) 966-3499</a> or <a href="mailto:ccc@sparkinitiative.io">email ccc@sparkinitiative.io</a>.</p>
+    </div>
+    <div class="chat-input"><span>&gt;</span><input type="text" placeholder="assistant offline" disabled></div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function(){
+      const f=document.getElementById('msgForm'), st=document.getElementById('msgStatus'); if(!f) return;
+      const topic=f.elements.topic, box=f.elements.message;
+      const setHint=()=>{ const o=topic.options[topic.selectedIndex]; if(o&&o.dataset.hint) box.placeholder=o.dataset.hint; };
+      topic.addEventListener('change',setHint); setHint();
+      f.addEventListener('submit', async e=>{
+        e.preventDefault();
+        const em=f.elements.email, nm=f.elements.name, ms=f.elements.message;
+        const bad=(el,msg)=>{ st.className='form-status err'; st.textContent='> '+msg; el.focus(); };
+        if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em.value.trim())) return bad(em,'an email address is required so I can reply.');
+        if(!nm.value.trim()) return bad(nm,'please add your name.');
+        if(!ms.value.trim()) return bad(ms,'please describe the problem or ask your question.');
+        const btn=f.querySelector('button'); btn.disabled=true; st.className='form-status'; st.textContent='> sending...';
+        try{
+          const r=await fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)});
+          const j=await r.json().catch(()=>({}));
+          if(r.ok && j.success){ st.className='form-status ok'; st.textContent='> message sent. Thanks, I\'ll get back to you soon.'; f.reset(); }
+          else throw new Error(j.message||('HTTP '+r.status));
+        }catch(err){ st.className='form-status err'; st.textContent='> send failed. Please text (979) 966-3499 or email ccc@sparkinitiative.io instead.'; }
+        btn.disabled=false;
+      });
+    })();
+    (function(){
+      const fab=document.getElementById('chatFab'), panel=document.getElementById('chatPanel');
+      const set=o=>{ panel.hidden=!o; fab.setAttribute('aria-expanded',o); };
+      fab.addEventListener('click',()=>set(panel.hidden));
+      document.getElementById('chatClose').addEventListener('click',()=>set(false));
+    })();
+    (function(){
+      const intro=document.getElementById('intro'); if(!intro) return;
+      try{ if(sessionStorage.getItem('ccc_booted')){ intro.remove(); return; } sessionStorage.setItem('ccc_booted','1'); }catch(e){}
+      const log=document.getElementById('introLog');
+      const lines=[...document.querySelectorAll('.hero-lockup .ln')], tagEl=document.getElementById('heroTagline');
+      const lineText=lines.map(l=>l.textContent), tagText=tagEl.textContent;
+      lines.forEach(l=>l.textContent=''); tagEl.textContent='';
+      let skipped=false; const skip=()=>{skipped=true;};
+      intro.addEventListener('click',skip); window.addEventListener('keydown',skip);
+      const sleep=ms=>new Promise(r=>setTimeout(r,skipped?0:ms));
+      function line(tx,tag,cls){
+        const d=document.createElement('div'); d.className='iln';
+        const a=document.createElement('span'); a.textContent=tx;
+        const b=document.createElement('span'); b.className='tag '+(cls||''); if(tag)b.textContent=tag;
+        d.appendChild(a); d.appendChild(b); log.appendChild(d);
+      }
+      async function type(el,text){ for(let i=0;i<text.length;i++){ el.textContent+=text[i]; await sleep(32); } }
+      let done=false;
+      const reveal=async()=>{
+        if(done) return; done=true;
+        intro.classList.add('off'); setTimeout(()=>intro.remove(),650);
+        await sleep(220); for(let i=0;i<lines.length;i++){ await type(lines[i],lineText[i]); } await sleep(120); await type(tagEl,tagText);
+      };
+      (async()=>{
+        await sleep(450);
+        line('CCC bench :: power on self test'); await sleep(260);
+        line('cpu power cable','SEATED','go'); await sleep(140);
+        line('cooler mount','TORQUED'); await sleep(140);
+        line('thermal paste','FRESH'); await sleep(140);
+        line('stress test, 15 min','PASS','go'); await sleep(160);
+        line('report','PRINTING','warn'); await sleep(280);
+        const f=document.createElement('div'); f.className='intro-final'; f.textContent='> fixed, tested, documented';
+        log.appendChild(f); await sleep(650);
+        reveal();
+      })();
+      setTimeout(()=>{ if(!done) reveal(); lines.forEach((l,i)=>{ if(!l.textContent) l.textContent=lineText[i]; }); if(!tagEl.textContent)tagEl.textContent=tagText; },9000);
+    })();
+  </script>
+</body>
+</html>
